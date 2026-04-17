@@ -196,6 +196,10 @@ h1 {
   padding-top: 28px;
 }
 
+.shelf {
+  min-width: 0;
+}
+
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -222,6 +226,7 @@ h1 {
   grid-auto-flow: column;
   grid-auto-columns: minmax(260px, 320px);
   gap: 16px;
+  min-width: 0;
   overflow-x: auto;
   padding: 2px 2px 16px;
   scroll-snap-type: x proximity;
