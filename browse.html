@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browse - Baribouffe</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body data-page="browse">
+
+<main class="site-shell browse-shell">
+  <header class="browse-topbar">
+    <div>
+      <p class="eyebrow">All 94 entries</p>
+      <h1>Browse Baribouffe</h1>
+      <p>Search recipes, techniques, ingredients, tags, channels, and source notes.</p>
+    </div>
+    <a class="button secondary" href="index.html">Back home</a>
+  </header>
+
+  <section class="browse-controls" aria-label="Search and filters">
+    <div class="home-search">
+      <input id="searchInput" type="search" placeholder="Search title, ingredients, instructions, tags, channel, or notes" autocomplete="off">
+      <button id="clearSearch" type="button">Clear</button>
+    </div>
+    <div class="quick-row" aria-label="Quick filters">
+      <button class="quick-button is-active" type="button" data-quick="all">All</button>
+      <button class="quick-button" type="button" data-quick="cookable_now">Cookable now</button>
+      <button class="quick-button" type="button" data-quick="needs_details">Needs details</button>
+      <button class="quick-button" type="button" data-quick="reference">Reference</button>
+      <button class="quick-button" type="button" data-quick="use_caution">Use caution</button>
+      <button class="quick-button" type="button" data-quick="quick_wins">Quick wins</button>
+      <button class="quick-button" type="button" data-quick="weekend_projects">Weekend projects</button>
+    </div>
+    <div class="filter-grid">
+      <label>Type<select id="typeFilter"></select></label>
+      <label>Course<select id="courseFilter"></select></label>
+      <label>Diet<select id="dietFilter"></select></label>
+      <label>Cookability<select id="cookabilityFilter"></select></label>
+      <label>Difficulty<select id="difficultyFilter"></select></label>
+      <label>Cleanup<select id="cleanupFilter"></select></label>
+      <label>Tag<select id="tagFilter"></select></label>
+    </div>
+  </section>
+
+  <div class="summary-line">
+    <span id="resultCount">94 of 94 entries</span>
+    <span>Cookability is the public trust signal.</span>
+  </div>
+  <section id="entryGrid" class="card-grid" aria-live="polite"></section>
+</main>
+
+
+</body>
+</html>
